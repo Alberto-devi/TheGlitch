@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GlitchData" format=3 uid="uid://2s5ndx3dllam"]
+
+[ext_resource type="Script" uid="uid://bsxavvxb8turv" path="res://Scripts/GlitchData.gd" id="1_yqdso"]
+
+[resource]
+script = ExtResource("1_yqdso")
+nombre = "Tool Blocker"
+descripcion = "Se adhiere al código base y es dificilísimo de desinstalar. Es lento, pero resistente."
+vida_maxima = 150
+ataque = 5
+velocidad_ataque = 4.0
+dificultad_minijuego = 2
+metadata/_custom_type_script = "uid://bsxavvxb8turv"

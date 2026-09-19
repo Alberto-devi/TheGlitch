@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="AppAliadaData" format=3 uid="uid://dmwu5okdohlgi"]
+
+[ext_resource type="Script" uid="uid://ch4qagy60btfv" path="res://Scripts/AppAliadaData.gd" id="1_f0av1"]
+
+[resource]
+script = ExtResource("1_f0av1")
+metadata/_custom_type_script = "uid://ch4qagy60btfv"

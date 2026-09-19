@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dc6gopbypeikx"]
+
+[ext_resource type="Script" uid="uid://xxdti62qxdcw" path="res://Scripts/dispositivo_corrupto.gd" id="1_7m58y"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bawc1"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_bawc1"]
+radius = 1.5383027
+
+[node name="DispositivoCorrupto" type="Node3D" unique_id=799580362]
+script = ExtResource("1_7m58y")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=503715189]
+transform = Transform3D(1, 0, 0, 0, 0.062916934, 0, 0, 0, 0.600551, 0, 0, 0)
+mesh = SubResource("BoxMesh_bawc1")
+
+[node name="ZonaInteraccion" type="Area3D" parent="." unique_id=1990698748]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ZonaInteraccion" unique_id=533745211]
+shape = SubResource("SphereShape3D_bawc1")
+
+[connection signal="body_entered" from="ZonaInteraccion" to="." method="_on_zona_interaccion_body_entered"]
+[connection signal="body_exited" from="ZonaInteraccion" to="." method="_on_zona_interaccion_body_exited"]

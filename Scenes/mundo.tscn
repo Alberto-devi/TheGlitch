@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://30t8rlf8qcj0"]
+
+[ext_resource type="PackedScene" uid="uid://djna3j446nar7" path="res://Scenes/player.tscn" id="1_4cw5y"]
+[ext_resource type="PackedScene" uid="uid://dc6gopbypeikx" path="res://Scenes/dispositivo_corrupto.tscn" id="2_gqidu"]
+[ext_resource type="Resource" uid="uid://cliqpbmpf4fxa" path="res://Recursos/Glitches/Ad_Mosquito.tres" id="3_glouy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bawc1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bawc1"]
+
+[sub_resource type="Environment" id="Environment_4cw5y"]
+
+[node name="Mundo" type="Node3D" unique_id=1023703031]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1017035641]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="piso" type="StaticBody3D" parent="." unique_id=518023871]
+transform = Transform3D(16.05746, 0, 0, 0, 0.18907833, 0, 0, 0, 16.887003, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piso" unique_id=147942172]
+shape = SubResource("BoxShape3D_bawc1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="piso" unique_id=1867701700]
+mesh = SubResource("BoxMesh_bawc1")
+
+[node name="Player" parent="." unique_id=266544447 instance=ExtResource("1_4cw5y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1078778705]
+environment = SubResource("Environment_4cw5y")
+
+[node name="DispositivoCorrupto" parent="." unique_id=799580362 instance=ExtResource("2_gqidu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9528537, 0.65319633, 2.5418878)
+glitch_alojado = ExtResource("3_glouy")

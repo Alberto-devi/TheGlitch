@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GlitchData" format=3 uid="uid://cb257ee56dtor"]
+
+[ext_resource type="Script" uid="uid://bsxavvxb8turv" path="res://Scripts/GlitchData.gd" id="1_tp2jg"]
+
+[resource]
+script = ExtResource("1_tp2jg")
+nombre = "Falso Click"
+descripcion = "Se camufla como algo útil. Si le das tiempo para ejecutarse, tu Antivirus sufrirá las consecuencias."
+vida_maxima = 70
+ataque = 20
+velocidad_ataque = 5.0
+dificultad_minijuego = 3
+metadata/_custom_type_script = "uid://bsxavvxb8turv"

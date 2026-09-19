@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://7nvx26ryddul"]
+
+[ext_resource type="Script" uid="uid://h2ibd2ckj0td" path="res://Scripts/inyeccion_codigo.gd" id="1_wfx2s"]
+
+[node name="InyeccionCodigo" type="Control" unique_id=1630936083]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wfx2s")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1615672680]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.051970966, 0.05197096, 0.05197095, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=463825287]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1917641248]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "Inyectando código... ¡No te equivoques!"
+horizontal_alignment = 1
+
+[node name="ContenedorTeclas" type="HBoxContainer" parent="VBoxContainer" unique_id=1323655328]
+layout_mode = 2
+alignment = 1
+
+[node name="LabelTiempo" type="Label" parent="VBoxContainer" unique_id=230306016]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+horizontal_alignment = 1
+
+[node name="TiempoLimite" type="Timer" parent="." unique_id=1860600152]
+
+[connection signal="timeout" from="TiempoLimite" to="." method="_on_tiempo_limite_timeout"]

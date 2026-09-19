@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GlitchData" format=3 uid="uid://cliqpbmpf4fxa"]
+
+[ext_resource type="PackedScene" uid="uid://bwd1efcvvkuh3" path="res://Assets/Diseños_Glitches/Temp.glb" id="1_8wdrb"]
+[ext_resource type="Script" uid="uid://bsxavvxb8turv" path="res://Scripts/GlitchData.gd" id="2_5k328"]
+
+[resource]
+script = ExtResource("2_5k328")
+nombre = "Tool Blocker"
+descripcion = "Molesto, persistente y lleno de falsas promesas. No hace mucho daño, pero ataca rápido."
+modelo_3d = ExtResource("1_8wdrb")
+vida_maxima = 50
+ataque = 2
+velocidad_ataque = 1.5
+metadata/_custom_type_script = "uid://bsxavvxb8turv"
