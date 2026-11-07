@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AppAliadaData" format=3 uid="uid://djm76occbpqxc"]
+
+[ext_resource type="PackedScene" uid="uid://chkd2hfuvsvaq" path="res://Assets/Diseños_Apps/nintendo_switch_-_yo-kai_watch_1_-_robonyan.glb" id="1_rkd68"]
+[ext_resource type="Script" uid="uid://ch4qagy60btfv" path="res://Scripts/AppAliadaData.gd" id="1_t0yc7"]
+
+[resource]
+script = ExtResource("1_t0yc7")
+nombre = "robo nyan"
+modelo_3d = ExtResource("1_rkd68")
+metadata/_custom_type_script = "uid://ch4qagy60btfv"

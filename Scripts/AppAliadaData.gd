@@ -4,6 +4,7 @@ class_name AppAliadaData
 @export var nombre: String = "App Desconocida"
 @export_multiline var descripcion: String = "Descripción de la herramienta."
 @export var icono: Texture2D
+@export var modelo_3d: PackedScene
 
 @export_enum("Ataque", "Defensa", "Optimizacion", "Ralentizar") var tipo_efecto: String = "Ataque"
 
